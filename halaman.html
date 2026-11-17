@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h2>Royal Dashboard</h2>
+        <input type="text" id="search" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+    </header>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="halaman.html?menu=mahasiswa">Mahasiswa</a></li>
+            <li><a href="halaman.html?menu=kelas">Kelas</a></li>
+            <li><a href="halaman.html?menu=aktivitas">Aktifitas</a></li>
+            <li><a href="halaman.html?menu=statistik">Statistik</a></li>
+            <li><a href="halaman.html?menu=dokumen">Dokumen</a></li>
+            <li><a href="halaman.html?menu=settings">Settings</a></li>
+            <li class="logout">
+                <a href="index.html" onclick="return konfirmasiKeluar()">Sign Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- KONTEN HALAMAN -->
+    <main class="main-content">
+
+        <section class="welcome">
+            <div class="welcome-text">
+                <h1 id="judulHalaman">Halaman</h1>
+                <h2>Kelas SI-3D</h2>
+                <p>Selamat datang di Royal Dashboard.</p>
+            </div>
+
+            <div class="profile-avatar">
+                <img src="Fotonila.jpeg" alt="FotoNILA">
+            </div>
+        </section>
+
+        <section id="isiHalaman"></section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="dashboard">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h2>Royal Dashboard</h2>
+            <input type="text" placeholder="Cari Kelas, Dokumen, Aktivitas dll...">
+        </header>
+
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=mahasiswa">Mahasiswa</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=kelas">Kelas</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=aktivitas">Aktifitas</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=statistik">Statistik</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=dokumen">Dokumen</a>
+                </li>
+                <li>
+                    <a href="halaman.html?menu=settings">Settings</a>
+                </li>
+                <li class="logout">
+                    <a href="#" onclick="return konfirmasiKeluar()">Sign Out</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- WELCOME -->
+            <section class="welcome">
+                <div class="welcome-text">
+                    <h1>Selamat Datang, NILA NURJANNAH</h1>
+                    <h2>Kelas SI-3D</h2>
+                    <p>
+                        Kamu memiliki Statistik, 3 Progres Kelas,
+                        4 Aktifitas Selanjutnya dan 3 Lampiran
+                        Dokumen yang ada pada aplikasi ini.
+                    </p>
+                </div>
+
+                <div class="profile-avatar">
+                    <span>
+                        <img src="Fotonila.jpeg" alt="Fotonila">
+                    </span>
+                </div>
+            </section>
+
+            <!-- DASHBOARD GRID -->
+            <div class="dashboard-grid">
+
+                <!-- STATISTIK -->
+                <section class="card statistics">
+                    <img src="Chart_Statistik.svg" alt="Chart_Statistik.svg">
+                </section>
+
+                <!-- PROGRES KELAS -->
+                <section class="card progress">
+                    <h3>Progres Kelas</h3>
+
+                    <div class="progress-item">
+                        <strong>Matakuliah A</strong>
+                        <span>78 Pendaftar</span>
+                    </div>
+
+                    <div class="progress-item">
+                        <strong>Matakuliah B</strong>
+                        <span>30 Pendaftar</span>
+                    </div>
+
+                    <div class="progress-item">
+                        <strong>Matakuliah C</strong>
+                        <span>40 Pendaftar</span>
+                    </div>
+
+                    <div class="progress-item">
+                        <strong>Matakuliah D</strong>
+                        <span>10 Pendaftar</span>
+                    </div>
+                </section>
+
+                <!-- AKTIVITAS -->
+                <section class="card activities">
+                    <h3>Aktifitas Selanjutnya</h3>
+
+                    <div class="activity-item">
+                        <strong>Perkuliahan Daring 1</strong>
+                        <span>Senin, 15 Januari 2025</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <strong>Perkuliahan Daring 2</strong>
+                        <span>Selasa, 15 Februari 2025</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <strong>Perkuliahan Daring 1</strong>
+                        <span>Rabu, 15 Maret 2025</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <strong>Perkuliahan Daring 1</strong>
+                        <span>Kamis, 15 April 2025</span>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- LAMPIRAN -->
+            <section class="card attachments">
+                <h3>Lampiran</h3>
+
+                <div class="attachment-item">
+                    <span>
+                        <strong>Lampiran Dokumen 1</strong>
+                        - Matakuliah A | Tugas Bersama Perkuliahan Daring
+                    </span>
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+
+                <div class="attachment-item">
+                    <span>
+                        <strong>Lampiran Dokumen 2</strong>
+                        - Matakuliah B | Tugas Bersama Perkuliahan Daring
+                    </span>
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+
+                <div class="attachment-item">
+                    <span>
+                        <strong>Lampiran Dokumen 3</strong>
+                        - Matakuliah C | Tugas Bersama Perkuliahan Daring
+                    </span>
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function konfirmasiKeluar() {
+            return confirm("Apakah kamu yakin ingin keluar?");
+        }
+    </script>
+
+</body>
+</html>
